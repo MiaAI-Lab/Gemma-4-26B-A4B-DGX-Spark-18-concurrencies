@@ -6,3 +6,4 @@
 !.gitignore
 !start.sh
 !stop.sh
+!gemma4.py

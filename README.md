@@ -135,5 +135,6 @@ The repository is intentionally restricted for upload. A normal `git add .` shou
 - `.gitignore`
 - `start.sh`
 - `stop.sh`
+- `gemma4.py`
 
-Model weights, caches, logs, pid files, patched Python files, templates, and generated runtime artifacts are ignored.
+Model weights, caches, logs, pid files, templates, and generated runtime artifacts are ignored.
