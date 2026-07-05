@@ -1,0 +1,8 @@
+# Ignore everything by default.
+*
+
+# Keep the uploadable project files.
+!README.md
+!.gitignore
+!start.sh
+!stop.sh
