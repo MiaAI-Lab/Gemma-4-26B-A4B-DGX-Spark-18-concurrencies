@@ -1,4 +1,4 @@
-# Gemma 4 26B vLLM Server
+# Gemma-4-26B-A4B Super Easy vLLM recipie for DGX Spark
 
 This project starts and stops a Dockerized vLLM OpenAI-compatible API server for `nvidia/Gemma-4-26B-A4B-NVFP4`.
 
