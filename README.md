@@ -4,6 +4,16 @@ This project starts and stops a Dockerized vLLM OpenAI-compatible API server for
 
 The included `start.sh` script runs vLLM with the local `gemma4.py` patch mounted into the container, exposes the API on port `8888`, and stores runtime state in local cache, log, and pid files. The `stop.sh` script stops and removes the vLLM container and cleans up the pid file while preserving the log.
 
+<p>
+<a href="https://x.com/MiaAI_lab" target="_blank">
+  <img src="https://img.shields.io/badge/Follow%20me%20on%20X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Follow Mia on X" />
+</a>
+</p>
+<p>
+<a href='https://ko-fi.com/Z8Z3SPLOD' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+</p>
+
+
 ## Capacity
 
 The server is configured for up to 18 concurrent sessions. With MTP/speculative decoding enabled, cumulative throughput can reach up to 300 tokens per second, depending on prompt size, generation length, GPU availability, cache state, and runtime settings.
