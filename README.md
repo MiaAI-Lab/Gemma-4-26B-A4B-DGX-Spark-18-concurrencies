@@ -18,7 +18,7 @@ The included `start.sh` script runs vLLM with the local `gemma4.py` patch mounte
 
 The server is configured for up to 18 concurrent sessions. With MTP/speculative decoding enabled, measured cumulative throughput scales with concurrency as shown below.
 
-Benchmarks were run with `./tok.py` against a live server on `spark2`, using the default generation config and a short prompt (~31 tokens). Each row runs *N* concurrent sessions completing one generation each; **cumulative tok/s** is total generated tokens divided by wall-clock time for the full batch.
+Benchmarks were run with `./tok.py` against a live server on `spark2`, with `max_tokens: 1500` per request (each session allowed up to 1500 generated tokens). Each row runs *N* concurrent sessions completing one generation each; **cumulative tok/s** is total generated tokens divided by wall-clock time for the full batch.
 
 | Concurrent sessions | Wall clock (s) | Cumulative gen tok/s | Cumulative e2e tok/s | Avg gen tok/s / session | Avg e2e tok/s / session |
 | ---: | ---: | ---: | ---: | ---: | ---: |
